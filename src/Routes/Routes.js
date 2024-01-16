@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const ProductController = require('../Controllers/ProductControllers');
 
 // Rota para criar um novo produto
-router.post('/produtos');
+router.post('/produtos', ProductController.createProduto);
 
 //Rota para obter um novo produto
 router.get('/produtos');
