@@ -12,7 +12,7 @@ router.get('/produtos', ProductController.getAllProducts);
 router.get('/produtos/:id', ProductController.getProdutoById);
 
 // Rota para atualizar um produto
-router.put('/produtos/:id', ProductController.updateProducts);
+router.put('/produtos/:id', ProductController.updateProduto);
 
 // Rota para deletar um produto
 router.delete('/produtos/:id', ProductController.deleteProduto);

@@ -12,7 +12,7 @@ const ProductController = {
             res.status(201).json({ id: produtoRef.id, ...req.body });
         } catch(error) {
             // Devolve o erro erro
-            res.status(500).send(error.messagem);
+            res.status(500).send(error.message);
         }
     },
 
@@ -29,45 +29,45 @@ const ProductController = {
             res.status(200).json(produtos);
         } catch(error) {
             // Devolve o erro
-            res.status(500).send(error.messagem);
+            res.status(500).send(error.message);
         }
     },
 
     // Rota para buscar um produto pelo ID
-    getProdutoById: async(res, req) => {
+    getProdutoById: async (req, res) => {
         try {
             // Faz a busca do produto pelo ID
             const produtoRef = db.collection('produtos').doc(req.params.id);
             const doc = await produtoRef.get();
             // Faz a verificação se existe o produto
-            if(!doc.exists) {
+            if (!doc.exists) {
                 res.status(404).send('Produto não encontrado');
             } else {
                 // Resposta da requisição caso seja true
                 res.status(200).json({ id: doc.id, ...doc.data() });
             }
-        } catch(error) {
+        } catch (error) {
             // Devolve o erro
-            res.status(500).send(error.messagem);
+            res.status(500).send(error.message);
         }
     },
 
     // Rota para buscar um produto pelo ID e atualizar ele
-    updateProducts: async(res, req) => {
+    updateProduto: async (req, res) => {
         try {
             // Faz a busca do produto pelo ID e atualiza ele
             const produtoRef = db.collection('produtos').doc(req.params.id);
             await produtoRef.update(req.body);
             // Resposta da requisição caso seja true
             res.status(200).send('Produto atualizado com sucesso');
-        } catch(error) {
+        } catch (error) {
             // Devolve o erro
-            res.status(500).send(error.messagem);
+            res.status(500).send(error.message);
         }
     },
     
     // Rota para buscar um produto pelo ID e deletar ele
-    deleteProduto: async(res, req) => {
+    deleteProduto: async(req, res) => {
         try {
             // Faz a busca do produto pelo ID e deleta ele
             const produtoRef = db.collection('produtos').doc(req.params.id);
@@ -76,7 +76,7 @@ const ProductController = {
             res.status(200).send('Produto deletado com sucesso');
         } catch(error) {
             // Devolve o erro
-            res.status(500).send(error.messagem);
+            res.status(500).send(error.message);
         }
     }
 }
