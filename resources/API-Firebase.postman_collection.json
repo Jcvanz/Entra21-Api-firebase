@@ -1,0 +1,1292 @@
+{
+	"info": {
+		"_postman_id": "99febaa9-997f-4cdc-967a-d1527cfa82a0",
+		"name": "API-Firebase",
+		"description": "**Testando as rotas da API, desenvolvida com JavaScript e Firebase.**",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27351090"
+	},
+	"item": [
+		{
+			"name": "Produtos",
+			"item": [
+				{
+					"name": "criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nome\": \"tanga\",\r\n    \"valor\": 15.22\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/produtos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "criar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nome\": \"tanga\",\r\n    \"valor\": 15.22\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/produtos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"produtos"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"3a-OhIAM7subegBNJ9eaF37c+Dwb8U\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 18 Jan 2024 18:27:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"IXlsLusLRaFbMCZo5YRd\",\n    \"nome\": \"tanga\",\n    \"valor\": 15.22\n}"
+						}
+					]
+				},
+				{
+					"name": "buscar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/produtos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/produtos",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"produtos"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"73-PqS+VCIKhcUj3IjSoZTSWlNO7/k\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 18 Jan 2024 18:22:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"Ne3ehug8LBIY2fxPAqRW\",\n        \"nome\": \"meia\",\n        \"valor\": 10\n    },\n    {\n        \"id\": \"fshw4lns0j86pKfNHUXK\",\n        \"valor\": 190.9,\n        \"nome\": \"tenis\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "buscar ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/produtos/Ne3ehug8LBIY2fxPAqRW",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos",
+								"Ne3ehug8LBIY2fxPAqRW"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "text"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/produtos/Ne3ehug8LBIY2fxPAqRW",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"produtos",
+										"Ne3ehug8LBIY2fxPAqRW"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "54"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"36-ZIZWTlYdsbzKd8wKfqLQDSvrrh0\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 18 Jan 2024 18:23:15 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"Ne3ehug8LBIY2fxPAqRW\",\n    \"nome\": \"meia\",\n    \"valor\": 10\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"valor\": 15\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/produtos/Ne3ehug8LBIY2fxPAqRW",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos",
+								"Ne3ehug8LBIY2fxPAqRW"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"valor\": 15\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/produtos/Ne3ehug8LBIY2fxPAqRW",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"produtos",
+										"Ne3ehug8LBIY2fxPAqRW"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-TSgSwiSYF+dr4O4llgDUHzv8E0w\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 18 Jan 2024 18:25:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Produto atualizado com sucesso"
+						}
+					]
+				},
+				{
+					"name": "deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/produtos/Ne3ehug8LBIY2fxPAqRW",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"produtos",
+								"Ne3ehug8LBIY2fxPAqRW"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deletar",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/produtos/Ne3ehug8LBIY2fxPAqRW",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"produtos",
+										"Ne3ehug8LBIY2fxPAqRW"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c-01j7M3x4gQVzcxFQ2Oc2Pbmz048\""
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 18 Jan 2024 18:26:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "Produto deletado com sucesso"
+						}
+					]
+				}
+			],
+			"description": "# **Rota de produtos.**\n\n- **Post -> Criar um produto;**\n    \n- **Get -> Buscar um produto;**\n    \n- **Put -> Atualizar um produto;**\n    \n- **Delete -> Deletar um produto**"
+		},
+		{
+			"name": "Entradas",
+			"item": [
+				{
+					"name": "criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\r\n    \"nome\": \"bermuda\",\r\n    \"qntProduto\": \"10\",\r\n    \"valor\": 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/entradas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"entradas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "criar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\r\n    \"nome\": \"bermuda\",\r\n    \"qntProduto\": \"10\",\r\n    \"valor\": 50\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/entradas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"entradas"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "125"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7d-apJR4Ci0X9o4sOCF78iQG1/Iigg\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:40:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"7Hwl0GYpCWEnOWG4LIwO\",\n    \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\n    \"nome\": \"bermuda\",\n    \"qntProduto\": \"10\",\n    \"valor\": 50\n}"
+						}
+					]
+				},
+				{
+					"name": "buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/entradas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"entradas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/entradas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"entradas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "253"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fd-ubAT2H3+x+atcV6KtiS51vDTI9Q\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:40:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"7Hwl0GYpCWEnOWG4LIwO\",\n        \"qntProduto\": \"10\",\n        \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\n        \"valor\": 50,\n        \"nome\": \"bermuda\"\n    },\n    {\n        \"id\": \"sqkoiLzpzNXC0JT8uB7D\",\n        \"qntProduto\": \"10\",\n        \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\n        \"valor\": 50,\n        \"nome\": \"bermuda\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "buscar ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/entradas/7Hwl0GYpCWEnOWG4LIwO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"entradas",
+								"7Hwl0GYpCWEnOWG4LIwO"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/entradas/7Hwl0GYpCWEnOWG4LIwO",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"entradas",
+										"7Hwl0GYpCWEnOWG4LIwO"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "125"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7d-g8YpABPVZuArKftW3nJDbrg0O9U\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:40:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"7Hwl0GYpCWEnOWG4LIwO\",\n    \"qntProduto\": \"10\",\n    \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\n    \"valor\": 50,\n    \"nome\": \"bermuda\"\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"19 de janeiro de 2024 às 12:55:34 UTC-3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/entradas/7Hwl0GYpCWEnOWG4LIwO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"entradas",
+								"7Hwl0GYpCWEnOWG4LIwO"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": \"19 de janeiro de 2024 às 12:55:34 UTC-3\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/entradas/7Hwl0GYpCWEnOWG4LIwO",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"entradas",
+										"7Hwl0GYpCWEnOWG4LIwO"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "30"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1e-qQ0ddzQXE48S80USBT4le6uQ6XE\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:41:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "entrada atualizada com sucesso"
+						}
+					]
+				},
+				{
+					"name": "deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/entradas/7Hwl0GYpCWEnOWG4LIwO",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"entradas",
+								"7Hwl0GYpCWEnOWG4LIwO"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deletar",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/entradas/7Hwl0GYpCWEnOWG4LIwO",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"entradas",
+										"7Hwl0GYpCWEnOWG4LIwO"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c-9h6c8haOY1ULKs5dBiAhveSp8BU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:42:00 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "entrada deletada com sucesso"
+						}
+					]
+				}
+			],
+			"description": "# **Rota de entradas.**\n\n- **Post -> Criar uma entrada;**\n    \n- **Get -> Buscar uma entrada;**\n    \n- **Put -> Atualizar uma entrada;**\n    \n- **Delete -> Deletar uma entrada**"
+		},
+		{
+			"name": "Saidas",
+			"item": [
+				{
+					"name": "criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\r\n    \"nome\": \"bermuda\",\r\n    \"qntProduto\": 2,\r\n    \"valor\": 100\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/saidas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saidas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "criar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\r\n    \"nome\": \"bermuda\",\r\n    \"qntProduto\": 2,\r\n    \"valor\": 100\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/saidas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"saidas"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "123"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7b-cqEmOFgqylu1tMjB6Peasunpabs\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:42:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"Uo3c2iyYdWMXKvKvdcGI\",\n    \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\n    \"nome\": \"bermuda\",\n    \"qntProduto\": 2,\n    \"valor\": 100\n}"
+						}
+					]
+				},
+				{
+					"name": "buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/saidas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saidas"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/saidas",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"saidas"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "249"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f9-JemFzPDxojG+jK99Kt2YKT9gEHk\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:42:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"QrRJ02ozCauKCFilBX3o\",\n        \"qntProduto\": 2,\n        \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\n        \"valor\": 100,\n        \"nome\": \"bermuda\"\n    },\n    {\n        \"id\": \"Uo3c2iyYdWMXKvKvdcGI\",\n        \"qntProduto\": 2,\n        \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\n        \"valor\": 100,\n        \"nome\": \"bermuda\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "buscar ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/saidas/Uo3c2iyYdWMXKvKvdcGI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saidas",
+								"Uo3c2iyYdWMXKvKvdcGI"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/saidas/Uo3c2iyYdWMXKvKvdcGI",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"saidas",
+										"Uo3c2iyYdWMXKvKvdcGI"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "123"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7b-s+C24SE/inO4S20Z7pCSs7aWwuM\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:42:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"Uo3c2iyYdWMXKvKvdcGI\",\n    \"qntProduto\": 2,\n    \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\n    \"valor\": 100,\n    \"nome\": \"bermuda\"\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": \"19 de janeiro de 2024 às 15:23:49 UTC-3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/saidas/Uo3c2iyYdWMXKvKvdcGI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saidas",
+								"Uo3c2iyYdWMXKvKvdcGI"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"data\": \"19 de janeiro de 2024 às 15:23:49 UTC-3\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/saidas/Uo3c2iyYdWMXKvKvdcGI",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"saidas",
+										"Uo3c2iyYdWMXKvKvdcGI"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c-8L35sPabgs1DifIAwaRm36ZPpu8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:43:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "saida atualizada com sucesso"
+						}
+					]
+				},
+				{
+					"name": "deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/saidas/Uo3c2iyYdWMXKvKvdcGI",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"saidas",
+								"Uo3c2iyYdWMXKvKvdcGI"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deletar",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/saidas/Uo3c2iyYdWMXKvKvdcGI",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"saidas",
+										"Uo3c2iyYdWMXKvKvdcGI"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "26"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1a-iF+2mMzArnIDsSzhRkJfCuilSx8\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 19 Jan 2024 16:43:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "saida deletada com sucesso"
+						}
+					]
+				}
+			],
+			"description": "# **Rota de saidas.**\n\n- **Post -> Criar uma saida;**\n    \n- **Get -> Buscar uma saida;**\n    \n- **Put -> Atualizar uma saida;**\n    \n- **Delete -> Deletar uma saida**"
+		}
+	]
+}
