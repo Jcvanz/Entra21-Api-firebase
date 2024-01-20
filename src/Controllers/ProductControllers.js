@@ -1,6 +1,7 @@
+// Importação do Módulo Firebase
 const db = require('../../firebaseConfig');
 
-// Config das rotas
+// Objeto que controla as operações relacionada as entradas no banco
 const ProductController = {
     // Rota para criar produto
     createProducts: async(req, res) => {
@@ -11,7 +12,7 @@ const ProductController = {
             // Resposta da requisição caso seja true
             res.status(201).json({ id: produtoRef.id, ...req.body });
         } catch(error) {
-            // Devolve o erro erro
+            // Devolve o erro
             res.status(500).send(error.message);
         }
     },
