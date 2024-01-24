@@ -1287,6 +1287,419 @@
 				}
 			],
 			"description": "# **Rota de saidas.**\n\n- **Post -> Criar uma saida;**\n    \n- **Get -> Buscar uma saida;**\n    \n- **Put -> Atualizar uma saida;**\n    \n- **Delete -> Deletar uma saida**"
+		},
+		{
+			"name": "Notas Fiscais",
+			"item": [
+				{
+					"name": "criar",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nomePessoa\": \"John Textor\",\r\n    \"CPF\": \"2345768912\",\r\n    \"dataCompra\": \"25/01/2024\",\r\n    \"produto\": \"Tenis adidas\",\r\n    \"valorProduto\": 202.25,\r\n    \"numeroNota\": \"392109238498320\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/notafiscal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"notafiscal"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "criar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nomePessoa\": \"Julio Cesar Vanz\",\r\n    \"CPF\": \"12345678910\",\r\n    \"dataCompra\": \"20/01/2024\",\r\n    \"produto\": \"Tenis adidas\",\r\n    \"valorProduto\": 202.25,\r\n    \"numeroNota\": \"8372957328759827\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/notafiscal",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"notafiscal"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "186"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ba-VBqRcFKN2n8nPdsLT57rrm5uVgU\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Jan 2024 21:22:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"G6STWOK9jfNhdoIkVJXs\",\n    \"nomePessoa\": \"Julio Cesar Vanz\",\n    \"CPF\": \"12345678910\",\n    \"dataCompra\": \"20/01/2024\",\n    \"produto\": \"Tenis adidas\",\n    \"valorProduto\": 202.25,\n    \"numeroNota\": \"8372957328759827\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Buscar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/notafiscal",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"notafiscal"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/notafiscal",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"notafiscal"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "368"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"170-1MFNwaJ+FYJRVRuemphytE/9W2M\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Jan 2024 21:25:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": \"G6STWOK9jfNhdoIkVJXs\",\n        \"produto\": \"Tenis adidas\",\n        \"CPF\": \"12345678910\",\n        \"nomePessoa\": \"Julio Cesar Vanz\",\n        \"valorProduto\": 202.25,\n        \"numeroNota\": \"8372957328759827\",\n        \"dataCompra\": \"20/01/2024\"\n    },\n    {\n        \"id\": \"cIV38FkR0tiszj3BzfZV\",\n        \"produto\": \"Tenis adidas\",\n        \"CPF\": \"2345768912\",\n        \"nomePessoa\": \"John Textor\",\n        \"valorProduto\": 202.25,\n        \"numeroNota\": \"392109238498320\",\n        \"dataCompra\": \"25/01/2024\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "buscar ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/notafiscal/G6STWOK9jfNhdoIkVJXs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"notafiscal",
+								"G6STWOK9jfNhdoIkVJXs"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "buscar ID",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/notafiscal/G6STWOK9jfNhdoIkVJXs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"notafiscal",
+										"G6STWOK9jfNhdoIkVJXs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "186"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ba-mTGXhoWK6vF4TX7AVu6eZ1PTsQQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Jan 2024 21:27:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": \"G6STWOK9jfNhdoIkVJXs\",\n    \"produto\": \"Tenis adidas\",\n    \"CPF\": \"12345678910\",\n    \"nomePessoa\": \"Julio Cesar Vanz\",\n    \"valorProduto\": 202.25,\n    \"numeroNota\": \"8372957328759827\",\n    \"dataCompra\": \"20/01/2024\"\n}"
+						}
+					]
+				},
+				{
+					"name": "atualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dataCompra\": \"21/01/2024\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/notafiscal/G6STWOK9jfNhdoIkVJXs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"notafiscal",
+								"G6STWOK9jfNhdoIkVJXs"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "atualizar",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"dataCompra\": \"21/01/2024\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/notafiscal/G6STWOK9jfNhdoIkVJXs",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"notafiscal",
+										"G6STWOK9jfNhdoIkVJXs"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"22-rx/Hi/dLJDMf+e17gyx/BBh4ECY\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Jan 2024 21:28:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "nota fiscal atualizada com sucesso"
+						}
+					]
+				},
+				{
+					"name": "deletar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/notafiscal/cIV38FkR0tiszj3BzfZV",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"notafiscal",
+								"cIV38FkR0tiszj3BzfZV"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "deletar",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/notafiscal/cIV38FkR0tiszj3BzfZV",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"notafiscal",
+										"cIV38FkR0tiszj3BzfZV"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "html",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "32"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"20-9Jptnq1+SvwrFFT+PfN8WWM3xN4\""
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 24 Jan 2024 21:29:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "nota fiscal deletada com sucesso"
+						}
+					]
+				}
+			],
+			"description": "# **Rota de Notas Fiscais.**\n\n- **Post -> Criar uma saida;**\n    \n- **Get -> Buscar uma saida;**\n    \n- **Put -> Atualizar uma saida;**\n    \n- **Delete -> Deletar uma saida**"
 		}
 	]
 }
