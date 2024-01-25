@@ -42,7 +42,7 @@ const NotasFiscaisController = {
             const entradaRef = db.collection('nota-fiscal').doc(req.params.id);
             const doc = await entradaRef.get();
             if (!doc.exists) {
-                res.status(404).send('nota fiscal não encontrada');
+                res.status(404).send('Nota fiscal não encontrada');
             } else {
                 res.status(200).json({ id: doc.id, ...doc.data() });
             }
@@ -59,7 +59,7 @@ const NotasFiscaisController = {
             const entradaRef = db.collection('nota-fiscal').doc(req.params.id);
             await entradaRef.update(req.body);
             // Resposta da requisição caso seja true
-            res.status(200).send('nota fiscal atualizada com sucesso');
+            res.status(200).send('Nota fiscal atualizada com sucesso');
         } catch (error) {
             // Devolve o erro
             res.status(500).send(error.message);
@@ -73,7 +73,7 @@ const NotasFiscaisController = {
             const entradaRef = db.collection('nota-fiscal').doc(req.params.id);
             await entradaRef.delete();
             // Resposta da requisição caso seja true
-            res.status(200).send('nota fiscal deletada com sucesso');
+            res.status(200).send('Nota fiscal deletada com sucesso');
         } catch (error) {
             // Devolve o erro
             res.status(500).send(error.message);

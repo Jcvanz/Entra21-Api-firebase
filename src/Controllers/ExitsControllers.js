@@ -42,7 +42,7 @@ const ExitsControllers = {
             const entradaRef = db.collection('saidas').doc(req.params.id);
             const doc = await entradaRef.get();
             if (!doc.exists) {
-                res.status(404).send('saida não encontrada');
+                res.status(404).send('Saída não encontrada');
             } else {
                 res.status(200).json({ id: doc.id, ...doc.data() });
             }
@@ -59,7 +59,7 @@ const ExitsControllers = {
             const entradaRef = db.collection('saidas').doc(req.params.id);
             await entradaRef.update(req.body);
             // Resposta da requisição caso seja true
-            res.status(200).send('saida atualizada com sucesso');
+            res.status(200).send('Saída atualizada com sucesso');
         } catch (error) {
             // Devolve o erro
             res.status(500).send(error.message);
@@ -73,7 +73,7 @@ const ExitsControllers = {
             const entradaRef = db.collection('saidas').doc(req.params.id);
             await entradaRef.delete();
             // Resposta da requisição caso seja true
-            res.status(200).send('saida deletada com sucesso');
+            res.status(200).send('Saída deletada com sucesso');
         } catch (error) {
             // Devolve o erro
             res.status(500).send(error.message);
