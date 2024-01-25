@@ -17,7 +17,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nome\": \"tanga\",\r\n    \"valor\": 15.22\r\n}",
+							"raw": "{\r\n    \"nome\": \"colar\",\r\n    \"valor\": 245.00\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -472,7 +472,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\r\n    \"nome\": \"bermuda\",\r\n    \"qntProduto\": \"10\",\r\n    \"valor\": 50\r\n}",
+							"raw": "{\r\n    \"data\": \"2024/01/20\",\r\n    \"nome\": \"meia\",\r\n    \"qntProduto\": \"50\",\r\n    \"valor\": 5\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -605,15 +605,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "253"
+									"value": "1138"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"fd-ubAT2H3+x+atcV6KtiS51vDTI9Q\""
+									"value": "W/\"472-ihN61erXL1vQQHzVaTme6hcCHM8\""
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 19 Jan 2024 16:40:49 GMT"
+									"value": "Thu, 25 Jan 2024 17:27:45 GMT"
 								},
 								{
 									"key": "Connection",
@@ -625,7 +625,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n    {\n        \"id\": \"7Hwl0GYpCWEnOWG4LIwO\",\n        \"qntProduto\": \"10\",\n        \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\n        \"valor\": 50,\n        \"nome\": \"bermuda\"\n    },\n    {\n        \"id\": \"sqkoiLzpzNXC0JT8uB7D\",\n        \"qntProduto\": \"10\",\n        \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\n        \"valor\": 50,\n        \"nome\": \"bermuda\"\n    }\n]"
+							"body": "[\n    {\n        \"id\": \"5hWaI8y4T5K3BXKW0kYQ\",\n        \"qntProduto\": \"10\",\n        \"valor\": 195,\n        \"nome\": \"colar\",\n        \"data\": \"2024/01/19\"\n    },\n    {\n        \"id\": \"5x7aTgC8ttBFkePGlpmI\",\n        \"qntProduto\": \"10\",\n        \"valor\": 100,\n        \"nome\": \"regata\",\n        \"data\": \"2024/01/14\"\n    },\n    {\n        \"id\": \"90VMnOZXt7a7aL7zMW5V\",\n        \"qntProduto\": \"5\",\n        \"valor\": 100,\n        \"nome\": \"peruca\",\n        \"data\": \"2024/01/25\"\n    },\n    {\n        \"id\": \"Kuf9JzXyuierh5Qx7UxN\",\n        \"qntProduto\": \"50\",\n        \"valor\": 5,\n        \"nome\": \"meia\",\n        \"data\": \"2024/01/20\"\n    },\n    {\n        \"id\": \"KzDeLiuFAO8dM8mCOVlf\",\n        \"qntProduto\": \"5\",\n        \"valor\": 200,\n        \"nome\": \"relogio\",\n        \"data\": \"2024/01/19\"\n    },\n    {\n        \"id\": \"RJYzNAZo5T8teHMgGDYz\",\n        \"qntProduto\": \"10\",\n        \"valor\": 120,\n        \"nome\": \"casaco\",\n        \"data\": \"2024/01/20\"\n    },\n    {\n        \"id\": \"gH7S3lbTqZ0rd29eqXbJ\",\n        \"qntProduto\": \"5\",\n        \"valor\": 10,\n        \"nome\": \"tanga\",\n        \"data\": \"2024/01/22\"\n    },\n    {\n        \"id\": \"jIj8s3oKexC0znNgNmgW\",\n        \"qntProduto\": \"10\",\n        \"valor\": 80,\n        \"nome\": \"oculos\",\n        \"data\": \"2024/01/19\"\n    },\n    {\n        \"id\": \"sqkoiLzpzNXC0JT8uB7D\",\n        \"qntProduto\": \"10\",\n        \"valor\": 50,\n        \"nome\": \"bermuda\",\n        \"data\": \"2024/01/18\"\n    },\n    {\n        \"id\": \"tm8ytftDbb75x5WUrbTC\",\n        \"qntProduto\": \"5\",\n        \"valor\": 150,\n        \"nome\": \"tenis\",\n        \"data\": \"2024/01/15\"\n    },\n    {\n        \"id\": \"vd7H48sX35v1C0bnXg6B\",\n        \"qntProduto\": \"10\",\n        \"valor\": 200,\n        \"nome\": \"bolsa\",\n        \"data\": \"2024/01/20\"\n    },\n    {\n        \"id\": \"wFZJ4T0ht9ugE943Nrl5\",\n        \"qntProduto\": \"5\",\n        \"valor\": 15,\n        \"nome\": \"camisa\",\n        \"data\": \"2024/01/15\"\n    }\n]"
 						}
 					]
 				},
@@ -635,7 +635,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/entradas/7Hwl0GYpCWEnOWG4LIwO",
+							"raw": "http://localhost:3000/entradas/5hWaI8y4T5K3BXKW0kYQ",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -643,7 +643,7 @@
 							"port": "3000",
 							"path": [
 								"entradas",
-								"7Hwl0GYpCWEnOWG4LIwO"
+								"5hWaI8y4T5K3BXKW0kYQ"
 							]
 						}
 					},
@@ -654,7 +654,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:3000/entradas/7Hwl0GYpCWEnOWG4LIwO",
+									"raw": "http://localhost:3000/entradas/5hWaI8y4T5K3BXKW0kYQ",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -662,7 +662,7 @@
 									"port": "3000",
 									"path": [
 										"entradas",
-										"7Hwl0GYpCWEnOWG4LIwO"
+										"5hWaI8y4T5K3BXKW0kYQ"
 									]
 								}
 							},
@@ -680,15 +680,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "125"
+									"value": "94"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"7d-g8YpABPVZuArKftW3nJDbrg0O9U\""
+									"value": "W/\"5e-NvBS4KV2r2gWN/Sca6LCewQ8i+4\""
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 19 Jan 2024 16:40:57 GMT"
+									"value": "Thu, 25 Jan 2024 17:28:18 GMT"
 								},
 								{
 									"key": "Connection",
@@ -700,7 +700,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": \"7Hwl0GYpCWEnOWG4LIwO\",\n    \"qntProduto\": \"10\",\n    \"data\": \"18 de janeiro de 2024 às 12:20:40 UTC-3\",\n    \"valor\": 50,\n    \"nome\": \"bermuda\"\n}"
+							"body": "{\n    \"id\": \"5hWaI8y4T5K3BXKW0kYQ\",\n    \"qntProduto\": \"10\",\n    \"valor\": 195,\n    \"nome\": \"colar\",\n    \"data\": \"2024/01/19\"\n}"
 						}
 					]
 				},
@@ -885,7 +885,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\r\n    \"nome\": \"bermuda\",\r\n    \"qntProduto\": 2,\r\n    \"valor\": 100\r\n}",
+							"raw": "{\r\n    \"data\": \"2024/01/22\",\r\n    \"nome\": \"meia\",\r\n    \"qntProduto\": 2,\r\n    \"valor\": 20\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -912,7 +912,7 @@
 								"header": [],
 								"body": {
 									"mode": "raw",
-									"raw": "{\r\n    \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\r\n    \"nome\": \"bermuda\",\r\n    \"qntProduto\": 2,\r\n    \"valor\": 100\r\n}",
+									"raw": "{\r\n    \"data\": \"2024/01/22\",\r\n    \"nome\": \"meia\",\r\n    \"qntProduto\": 2,\r\n    \"valor\": 20\r\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -945,15 +945,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "123"
+									"value": "89"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"7b-cqEmOFgqylu1tMjB6Peasunpabs\""
+									"value": "W/\"59-GyCpkMYzkC2mEa6nX2OzzC8fVDY\""
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 19 Jan 2024 16:42:23 GMT"
+									"value": "Thu, 25 Jan 2024 17:29:19 GMT"
 								},
 								{
 									"key": "Connection",
@@ -965,7 +965,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": \"Uo3c2iyYdWMXKvKvdcGI\",\n    \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\n    \"nome\": \"bermuda\",\n    \"qntProduto\": 2,\n    \"valor\": 100\n}"
+							"body": "{\n    \"id\": \"B9FqybmAlqzRuFlofUlg\",\n    \"data\": \"2024/01/22\",\n    \"nome\": \"meia\",\n    \"qntProduto\": 2,\n    \"valor\": 20\n}"
 						}
 					]
 				},
@@ -1018,15 +1018,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "249"
+									"value": "1298"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"f9-JemFzPDxojG+jK99Kt2YKT9gEHk\""
+									"value": "W/\"512-LDhtjTulIDwdKrTP0PG9ZM2V6n8\""
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 19 Jan 2024 16:42:31 GMT"
+									"value": "Thu, 25 Jan 2024 17:29:40 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1038,7 +1038,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n    {\n        \"id\": \"QrRJ02ozCauKCFilBX3o\",\n        \"qntProduto\": 2,\n        \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\n        \"valor\": 100,\n        \"nome\": \"bermuda\"\n    },\n    {\n        \"id\": \"Uo3c2iyYdWMXKvKvdcGI\",\n        \"qntProduto\": 2,\n        \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\n        \"valor\": 100,\n        \"nome\": \"bermuda\"\n    }\n]"
+							"body": "[\n    {\n        \"id\": \"3sgmgiRjz4HBqryeCzAq\",\n        \"qntProduto\": 1,\n        \"valor\": 245,\n        \"nome\": \"colar\",\n        \"data\": \"2024/01/23\"\n    },\n    {\n        \"id\": \"4mCAGuXlQljSswhUkDyT\",\n        \"qntProduto\": 1,\n        \"valor\": 100,\n        \"nome\": \"peruca\",\n        \"data\": \"2024/01/24\"\n    },\n    {\n        \"id\": \"B9FqybmAlqzRuFlofUlg\",\n        \"qntProduto\": 2,\n        \"data\": \"2024/01/22\",\n        \"valor\": 20,\n        \"nome\": \"meia\"\n    },\n    {\n        \"id\": \"EBavlVdifj0cQdBsXLII\",\n        \"qntProduto\": 1,\n        \"valor\": 100,\n        \"nome\": \"regata\",\n        \"data\": \"2024/01/24\"\n    },\n    {\n        \"id\": \"GgqEK7EeHoBkJuZTVD7c\",\n        \"qntProduto\": 2,\n        \"valor\": 20,\n        \"nome\": \"meia\",\n        \"data\": \"2024/01/22\"\n    },\n    {\n        \"id\": \"PKi5TKNz1qMQWFEOpAbK\",\n        \"qntProduto\": 1,\n        \"valor\": 500,\n        \"nome\": \"relogio\",\n        \"data\": \"2024/01/23\"\n    },\n    {\n        \"id\": \"QrRJ02ozCauKCFilBX3o\",\n        \"qntProduto\": 2,\n        \"valor\": 100,\n        \"nome\": \"bermuda\",\n        \"data\": \"2024/01/18\"\n    },\n    {\n        \"id\": \"bVhFPqf5yn5XTMPj5gmE\",\n        \"qntProduto\": 1,\n        \"valor\": 100,\n        \"nome\": \"oculos\",\n        \"data\": \"2024/01/23\"\n    },\n    {\n        \"id\": \"fGtOq5UejvGTy6Ll9s9q\",\n        \"qntProduto\": 1,\n        \"valor\": 190.9,\n        \"nome\": \"tenis\",\n        \"data\": \"2024/01/24\"\n    },\n    {\n        \"id\": \"iY0u5uTNhy43zIfZZbzL\",\n        \"qntProduto\": 1,\n        \"valor\": 150,\n        \"nome\": \"casaco\",\n        \"data\": \"2024/01/22\"\n    },\n    {\n        \"id\": \"kpgryABnQnQ3LCwLshbg\",\n        \"qntProduto\": 1,\n        \"valor\": 15.22,\n        \"nome\": \"tanga\",\n        \"data\": \"2024/01/20\"\n    },\n    {\n        \"id\": \"ru7FGkepVxPgTpkXyFTi\",\n        \"qntProduto\": 2,\n        \"valor\": 25.22,\n        \"nome\": \"camisa\",\n        \"data\": \"2024/01/24\"\n    },\n    {\n        \"id\": \"yUk7jocXFioySGNs9LcS\",\n        \"qntProduto\": 1,\n        \"valor\": 10,\n        \"nome\": \"meia\",\n        \"data\": \"2024/01/18\"\n    },\n    {\n        \"id\": \"yhfcnFksfMAWa0AozHcM\",\n        \"qntProduto\": 1,\n        \"valor\": 250,\n        \"nome\": \"bolsa\",\n        \"data\": \"2024/01/22\"\n    }\n]"
 						}
 					]
 				},
@@ -1067,7 +1067,7 @@
 								"method": "GET",
 								"header": [],
 								"url": {
-									"raw": "http://localhost:3000/saidas/Uo3c2iyYdWMXKvKvdcGI",
+									"raw": "http://localhost:3000/saidas/3sgmgiRjz4HBqryeCzAq",
 									"protocol": "http",
 									"host": [
 										"localhost"
@@ -1075,7 +1075,7 @@
 									"port": "3000",
 									"path": [
 										"saidas",
-										"Uo3c2iyYdWMXKvKvdcGI"
+										"3sgmgiRjz4HBqryeCzAq"
 									]
 								}
 							},
@@ -1093,15 +1093,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "123"
+									"value": "91"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"7b-s+C24SE/inO4S20Z7pCSs7aWwuM\""
+									"value": "W/\"5b-x4gZxCikYw0reARZYDSt1B1yiR8\""
 								},
 								{
 									"key": "Date",
-									"value": "Fri, 19 Jan 2024 16:42:38 GMT"
+									"value": "Thu, 25 Jan 2024 17:30:02 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1113,7 +1113,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": \"Uo3c2iyYdWMXKvKvdcGI\",\n    \"qntProduto\": 2,\n    \"data\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\n    \"valor\": 100,\n    \"nome\": \"bermuda\"\n}"
+							"body": "{\n    \"id\": \"3sgmgiRjz4HBqryeCzAq\",\n    \"qntProduto\": 1,\n    \"valor\": 245,\n    \"nome\": \"colar\",\n    \"data\": \"2024/01/23\"\n}"
 						}
 					]
 				},
@@ -1298,7 +1298,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nomePessoa\": \"John Textor\",\r\n    \"CPF\": \"2345768912\",\r\n    \"dataCompra\": \"25/01/2024\",\r\n    \"produto\": \"Tenis adidas\",\r\n    \"valorProduto\": 202.25,\r\n    \"numeroNota\": \"392109238498320\"\r\n}",
+							"raw": "{\r\n    \"nomePessoa\": \"turtle\",\r\n    \"CPF\": \"9874561856\",\r\n    \"dataCompra\": \"18 de janeiro de 2024 às 15:23:49 UTC-3\",\r\n    \"produto\": \"bolsa\",\r\n    \"qntProduto\": 1,\r\n    \"valorProduto\": 250,\r\n    \"numeroNota\": \"8945689568954\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1401,7 +1401,7 @@
 					},
 					"response": [
 						{
-							"name": "buscar",
+							"name": "Buscar",
 							"originalRequest": {
 								"method": "GET",
 								"header": [],
@@ -1431,15 +1431,15 @@
 								},
 								{
 									"key": "Content-Length",
-									"value": "368"
+									"value": "2549"
 								},
 								{
 									"key": "ETag",
-									"value": "W/\"170-1MFNwaJ+FYJRVRuemphytE/9W2M\""
+									"value": "W/\"9f5-f1Olo+tFZu2JrJOQR6nVYJOEI8w\""
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 24 Jan 2024 21:25:59 GMT"
+									"value": "Thu, 25 Jan 2024 17:30:20 GMT"
 								},
 								{
 									"key": "Connection",
@@ -1451,7 +1451,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n    {\n        \"id\": \"G6STWOK9jfNhdoIkVJXs\",\n        \"produto\": \"Tenis adidas\",\n        \"CPF\": \"12345678910\",\n        \"nomePessoa\": \"Julio Cesar Vanz\",\n        \"valorProduto\": 202.25,\n        \"numeroNota\": \"8372957328759827\",\n        \"dataCompra\": \"20/01/2024\"\n    },\n    {\n        \"id\": \"cIV38FkR0tiszj3BzfZV\",\n        \"produto\": \"Tenis adidas\",\n        \"CPF\": \"2345768912\",\n        \"nomePessoa\": \"John Textor\",\n        \"valorProduto\": 202.25,\n        \"numeroNota\": \"392109238498320\",\n        \"dataCompra\": \"25/01/2024\"\n    }\n]"
+							"body": "[\n    {\n        \"id\": \"BRyyhbKYG6NJZgh8IQSf\",\n        \"qntProduto\": 1,\n        \"produto\": \"casaco\",\n        \"CPF\": \"25896314756\",\n        \"nomePessoa\": \"ronkong\",\n        \"valorProduto\": 150,\n        \"numeroNota\": \"128525485854\",\n        \"dataCompra\": \"2024/01/22\"\n    },\n    {\n        \"id\": \"CZRlXwHk2tXvkSLQ1QQF\",\n        \"qntProduto\": 1,\n        \"produto\": \"colar\",\n        \"CPF\": \"36925814702\",\n        \"nomePessoa\": \"mataus\",\n        \"valorProduto\": 100,\n        \"numeroNota\": \"8798500545465\",\n        \"dataCompra\": \"2024/01/18\"\n    },\n    {\n        \"id\": \"EBU1lTMhn3JUSQCJsqXx\",\n        \"qntProduto\": 1,\n        \"produto\": \"casaco\",\n        \"CPF\": \"45678912369\",\n        \"nomePessoa\": \"amadasad\",\n        \"valorProduto\": 150,\n        \"numeroNota\": \"789559654856875\",\n        \"dataCompra\": \"2024/01/20\"\n    },\n    {\n        \"id\": \"HwNpJUOesRC8wjvkeAip\",\n        \"qntProduto\": 1,\n        \"produto\": \"relogio\",\n        \"CPF\": \"25836914702\",\n        \"nomePessoa\": \"chut de peito\",\n        \"valorProduto\": 500,\n        \"numeroNota\": \"7474165252447562\",\n        \"dataCompra\": \"2024/01/23\"\n    },\n    {\n        \"id\": \"JscpDxLAA1l4hWzPKBk6\",\n        \"qntProduto\": 1,\n        \"produto\": \"meia\",\n        \"CPF\": \"56423189700\",\n        \"nomePessoa\": \"tartaruga ninja\",\n        \"valorProduto\": 10,\n        \"numeroNota\": \"78584568568956\",\n        \"dataCompra\": \"2024/01/18\"\n    },\n    {\n        \"id\": \"UjPVsyVaRjlI4Fu9JeIq\",\n        \"produto\": \"colar\",\n        \"CPF\": \"14725836914\",\n        \"nomePessoa\": \"caio de pe\",\n        \"valorProduto\": 245,\n        \"numeroNota\": \"586116541625498\",\n        \"dataCompra\": \"2024/01/18\"\n    },\n    {\n        \"id\": \"dGOGJSMiIgTEdNczpTNX\",\n        \"qntProduto\": 1,\n        \"produto\": \"tenis\",\n        \"CPF\": \"14736925825\",\n        \"nomePessoa\": \"takiro\",\n        \"valorProduto\": 190.9,\n        \"numeroNota\": \"789525659656\",\n        \"dataCompra\": \"2024/01/24\"\n    },\n    {\n        \"id\": \"m0KWTbOktKsChq4sB2FF\",\n        \"qntProduto\": 1,\n        \"produto\": \"oculos\",\n        \"CPF\": \"87954156321\",\n        \"nomePessoa\": \"churusbango\",\n        \"valorProduto\": 100,\n        \"numeroNota\": \"789525659656\",\n        \"dataCompra\": \"2024/01/23\"\n    },\n    {\n        \"id\": \"n06dKzqZZyRn27Uxt3DO\",\n        \"produto\": \"colar\",\n        \"CPF\": \"51651651698\",\n        \"nomePessoa\": \"Jamal Otaco\",\n        \"valorProduto\": 202.25,\n        \"numeroNota\": \"4454168561651\",\n        \"dataCompra\": \"2024/01/23\"\n    },\n    {\n        \"id\": \"okDw3PaBB7VbD0cv0GwS\",\n        \"qntProduto\": 2,\n        \"produto\": \"camisa\",\n        \"CPF\": \"85749632175\",\n        \"nomePessoa\": \"predo\",\n        \"valorProduto\": 25.22,\n        \"numeroNota\": \"895629845612856\",\n        \"dataCompra\": \"2024/01/24\"\n    },\n    {\n        \"id\": \"qa3Ttho20QiRZrTl3yAD\",\n        \"qntProduto\": 2,\n        \"produto\": \"meia\",\n        \"CPF\": \"25836914702\",\n        \"nomePessoa\": \"chut de peito\",\n        \"valorProduto\": 20,\n        \"numeroNota\": \"87232320065865\",\n        \"dataCompra\": \"2024/01/22\"\n    },\n    {\n        \"id\": \"s637X44jWiAZbNDbRCim\",\n        \"qntProduto\": 1,\n        \"produto\": \"regats\",\n        \"CPF\": \"25836914702\",\n        \"nomePessoa\": \"chut de peito\",\n        \"valorProduto\": 100,\n        \"numeroNota\": \"879789498561261\",\n        \"dataCompra\": \"2024/01/24\"\n    },\n    {\n        \"id\": \"v9stSTT1QuLJxauaqJ3n\",\n        \"qntProduto\": 1,\n        \"produto\": \"bolsa\",\n        \"CPF\": \"9874561856\",\n        \"nomePessoa\": \"turtle\",\n        \"valorProduto\": 250,\n        \"numeroNota\": \"8945689568954\",\n        \"dataCompra\": \"2024/01/18\"\n    },\n    {\n        \"id\": \"vfPV3G7H7IEzYYbCX7dD\",\n        \"qntProduto\": 1,\n        \"produto\": \"tanga\",\n        \"CPF\": \"28596347123\",\n        \"nomePessoa\": \"loro jose\",\n        \"valorProduto\": 15.22,\n        \"numeroNota\": \"895629845612856\",\n        \"dataCompra\": \"2024/01/20\"\n    }\n]"
 						}
 					]
 				},
