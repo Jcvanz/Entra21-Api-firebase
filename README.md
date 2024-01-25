@@ -26,12 +26,5 @@
       </a>
       <br>Firebase
     </td>
-  <td align="center" width="96">
-      <a>
-        <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original.svg" width="48" height="48" alt="git" />
-      </a>
-      <br>Git
-    </td>
-  </tr>
 </table>
 <h2></h2>
