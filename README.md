@@ -45,6 +45,6 @@ Para iniciar rodar a API, use algum dos dois comandos abaixo:
 npm start ou npm run dev
 ```
 
-* [Eduardo](https://github.com/Jcvanz)
+* [Julio](https://github.com/Jcvanz/Entra21-Api-firebase)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
