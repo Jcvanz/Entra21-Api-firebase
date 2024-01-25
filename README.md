@@ -1,4 +1,4 @@
-<h1 align="center">## :dart: API Node.js e Firebase - Entra21</h1>
+<h1 align="center">:dart: API Node.js e Firebase - Entra21</h1>
 
 ## :memo: Descrição
 Projeto desenvolvido nas aulas de Node.js do curso Entra21 com o professora Samuel. Está API foi 
@@ -28,5 +28,3 @@ Para iniciar rodar a API, use algum dos dois comandos abaixo:
 ```
 npm start ou npm run dev
 ```
-
-## :dart: Status do projeto
