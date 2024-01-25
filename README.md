@@ -20,6 +20,14 @@ Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando 
 ```
 Git clone https://github.com/Jcvanz/Entra21-Api-firebase
 ```
+Após, instale todas as bibliotecas usadas, usando o comando abaixo: 
+```
+npm install
+```
+Para iniciar rodar a API, use algum dos dois comandos abaixo:
+```
+npm start ou npm run dev
+```
 
 ## :soon: Implementação futura
 * O que será implementado na próxima sprint?
