@@ -1,4 +1,4 @@
-<h1 align="center">:javascript: API Node.js e Firebase - Entra21</h1>
+<h1 align="center">🗄️: API Node.js e Firebase - Entra21</h1>
 
 ## :memo: Descrição
 Projeto desenvolvido nas aulas de Node.js do curso Entra21 com o professora Samuel. Está API foi 
