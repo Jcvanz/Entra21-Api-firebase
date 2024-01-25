@@ -1,5 +1,5 @@
 <h1 align="center">:dart: API Node.js e Firebase - Entra21</h1>
-<p>
+<div align="center">
   <p>
   <a href="https://github.com/Jcvanz/Entra21-Api-firebase">
     <img src="https://img.shields.io/github/contributors/Jcvanz/Entra21-Api-firebase" alt="contributors" />
@@ -13,7 +13,7 @@
   <a href="https://github.com/Jcvanz/Entra21-Api-firebase/stargazers">
     <img src="https://img.shields.io/github/stars/Jcvanz/Entra21-Api-firebase" alt="stars" />
   </a>
-</p>
+</div>
 
 
 ## :memo: Descrição
