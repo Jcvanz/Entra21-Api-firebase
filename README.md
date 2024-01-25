@@ -1,30 +1,35 @@
-﻿# Entra21-Api-firebase
+<h1 align="center">:file_cabinet: Exemplo de README.md</h1>
 
-<h1 align="center" fontsize="20">
-  Tecnologias
-</h1>
+## :memo: Descrição
+Escreva uma descrição do seu projeto
 
-<table align="center">
-  <tr align="center">
-     <td align="center" width="96">
-      <a>
-        <img src="https://github.com/devicons/devicon/blob/master/icons/nodejs/nodejs-original.svg" width="48" height="48" alt="Node" />
+## :books: Funcionalidades
+* <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
+
+## :wrench: Tecnologias utilizadas
+* Tecnologia;
+
+## :rocket: Rodando o projeto
+Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
+```
+<linha de comando>
+```
+
+## :soon: Implementação futura
+* O que será implementado na próxima sprint?
+
+## :handshake: Colaboradores
+<table>
+  <tr>
+    <td align="center">
+      <a href="http://github.com/tatialveso">
+        <img src="https://avatars.githubusercontent.com/u/56259137?v=4" width="100px;" alt="Foto de Tati Alves no GitHub"/><br>
+        <sub>
+          <b>tatialveso</b>
+        </sub>
       </a>
-      <br>Node
-    </td>
-    <td align="center" width="96">
-      <a>
-        <img src="https://github.com/devicons/devicon/blob/master/icons/javascript/javascript-original.svg" width="48" height="48" alt="javascript" />
-      </a>
-      <br>Javascript
     </td>
   </tr>
-  <tr align="center">
-  <td align="center" width="96">
-      <a>
-        <img src="https://github.com/devicons/devicon/blob/master/icons/firebase/firebase-plain.svg" width="48" height="48" alt="firebase" />
-      </a>
-      <br>Firebase
-    </td>
 </table>
-<h2></h2>
+
+## :dart: Status do projeto
