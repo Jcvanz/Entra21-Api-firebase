@@ -5,10 +5,15 @@ Projeto desenvolvido nas aulas de Node.js do curso Entra21 com o professora Samu
 desenvolvida com Node.js e o banco de dados não relacional Firebase. 
 
 ## :books: Funcionalidades
-* <b>Funcionalidade 1</b>: O que essa funcionalidade faz?
+* <b>Post</b>: Cria produtos, entradas, saídas e notas fiscais, através do método post e salva no banco de dados;
+* <b>Get</b>: Busca nas collections os produtos, entradas, saídas e notas fiscais, através do método get e devolve para o usuário uma mensagem de sucesso;
+* <b>Put</b>: Atualiza os dados através dos IDs, nas collections produtos, entradas, saídas e notas fiscais, utilizando o método put e devolve para o usuário uma mensagem de sucesso;
+* <b>Delete</b>: Deleta os dados através dos IDs, nas collections produtos, entradas, saídas e notas fiscais, através do método delete e devolve para o usuário uma mensagem de sucesso;
 
 ## :wrench: Tecnologias utilizadas
-* Tecnologia;
+* Node.js;
+* JavaScript;
+* Firebase
 
 ## :rocket: Rodando o projeto
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
