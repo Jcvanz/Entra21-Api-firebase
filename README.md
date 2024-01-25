@@ -14,6 +14,7 @@
     <img src="https://img.shields.io/github/stars/Jcvanz/Entra21-Api-firebase" alt="stars" />
   </a>
 </p>
+<br/>
 ## :memo: Descrição
 Projeto desenvolvido nas aulas de Node.js do curso Entra21 com o professora Samuel. Está API foi 
 desenvolvida com Node.js e o banco de dados não relacional Firebase. 
