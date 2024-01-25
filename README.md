@@ -18,7 +18,7 @@ desenvolvida com Node.js e o banco de dados não relacional Firebase.
 ## :rocket: Rodando o projeto
 Para rodar o repositório é necessário clonar o mesmo, dar o seguinte comando para iniciar o projeto:
 ```
-<linha de comando>
+<p>Git clone https://github.com/Jcvanz/Entra21-Api-firebase</p>
 ```
 
 ## :soon: Implementação futura
