@@ -1,5 +1,5 @@
 ﻿# Entra21-Api-firebase
 
-<p align="center" fontsize={20}>
+<h1 align="center" fontsize="20">
   Tecnologias
-</p>
+</h1>
